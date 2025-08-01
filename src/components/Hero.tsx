@@ -7,35 +7,39 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
           <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-            Responsible Banking Made Easier
+            Nurturing Growth, One Seed at a Time
           </h1>
           <p className="text-lg text-white/80 max-w-xl">
-            Financial services, including P2P payments, balance check and top-ups - are now available from any mobile app, including all messaging ones.
+            Premium, drought-tolerant, and high-yield seeds tailored for African farmers. Tested for Zimbabwean soil and climate.
           </p>
-          <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90 flex items-center gap-2">
-            <Download className="w-5 h-5" />
-            Download Application
-          </Button>
+          <div className="flex gap-4">
+            <Button className="px-8 py-6 text-lg bg-white text-black hover:bg-white/90">
+              View Products
+            </Button>
+            <Button variant="outline" className="px-8 py-6 text-lg text-white border-white/20 hover:bg-white/10">
+              Contact Us
+            </Button>
+          </div>
           <div className="grid grid-cols-3 gap-8 pt-8">
             <div>
-              <div className="text-3xl font-bold text-white">5000+</div>
-              <div className="text-white/60">Active users</div>
+              <div className="text-3xl font-bold text-white">95%+</div>
+              <div className="text-white/60">Germination Rate</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">30.3k</div>
-              <div className="text-white/60">Download</div>
+              <div className="text-3xl font-bold text-white">1000+</div>
+              <div className="text-white/60">Happy Farmers</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-white">1200+</div>
-              <div className="text-white/60">Reviews</div>
+              <div className="text-3xl font-bold text-white">10+</div>
+              <div className="text-white/60">Seed Varieties</div>
             </div>
           </div>
         </div>
         <div className="relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1288&auto=format&fit=crop"
-              alt="Banking App"
+              src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1288&auto=format&fit=crop"
+              alt="Farmer planting seeds in lush field"
               className="w-full h-auto"
             />
           </div>

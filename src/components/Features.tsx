@@ -1,22 +1,22 @@
 import { Card } from "@/components/ui/card";
-import { Wallet, Shield, CreditCard } from "lucide-react";
+import { Wheat, Droplets, Leaf } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
-      icon: <Wallet className="w-6 h-6 text-white" />,
-      title: "Mobile Banking",
-      description: "Manage your finances on the go with our secure mobile banking platform"
+      icon: <Wheat className="w-6 h-6 text-white" />,
+      title: "Maize Seeds",
+      description: "High-yield hybrid and open-pollinated varieties that are heat and drought resistant"
     },
     {
-      icon: <Shield className="w-6 h-6 text-white" />,
-      title: "Secure Transactions",
-      description: "Bank-grade security for all your transactions and personal data"
+      icon: <Droplets className="w-6 h-6 text-white" />,
+      title: "Sorghum & Millet",
+      description: "Traditional, hardy grains ideal for dry regions and long storage"
     },
     {
-      icon: <CreditCard className="w-6 h-6 text-white" />,
-      title: "Digital Cards",
-      description: "Virtual and physical cards with advanced control features"
+      icon: <Leaf className="w-6 h-6 text-white" />,
+      title: "Vegetable Seeds",
+      description: "Tomatoes, onions, cabbage, carrots for home gardens and commercial farming"
     }
   ];
 
@@ -26,11 +26,11 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-white">
-              All the experience in the new application
+            <h2 className="text-4xl font-bold text-white" id="products">
+              Certified Seeds for Sustainable Agriculture
             </h2>
             <p className="text-xl text-white/60">
-              Simple transfers, payments for utilities, functional statements, card settings, for which you used to have to go to the branch online-banking
+              Premium seed varieties tested for Zimbabwean soil and climate, delivering reliable harvests for farmers across the nation.
             </p>
           </div>
           <div className="grid gap-6">

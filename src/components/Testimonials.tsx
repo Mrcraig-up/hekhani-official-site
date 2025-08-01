@@ -4,19 +4,19 @@ import { MessageSquare } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "The best banking experience I've ever had. Simple, fast, and secure.",
-      author: "Sarah Johnson",
-      role: "Business Owner"
+      quote: "Hekhani seeds gave me the best harvest I've had in years. The germination rate was outstanding.",
+      author: "Tendai Mukamuri",
+      role: "Commercial Farmer"
     },
     {
-      quote: "This app has completely transformed how I manage my finances.",
-      author: "Michael Chen",
-      role: "Software Engineer"
+      quote: "Even during the dry season, these drought-resistant varieties kept producing. Amazing quality!",
+      author: "Grace Chidziva",
+      role: "Smallholder Farmer"
     },
     {
-      quote: "Incredible user experience. Everything just works seamlessly.",
-      author: "Emma Davis",
-      role: "Financial Analyst"
+      quote: "The extension support and training helped me improve my farming practices significantly.",
+      author: "James Sibanda",
+      role: "Emerging Farmer"
     }
   ];
 
@@ -25,10 +25,10 @@ const Testimonials = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="text-4xl font-bold text-white text-center mb-4">
-          What Our Users Say
+          What Our Farmers Say
         </h2>
         <p className="text-xl text-white/60 text-center mb-12 max-w-2xl mx-auto">
-          Join thousands of satisfied users who have transformed their banking experience
+          Join thousands of satisfied farmers who have transformed their harvests with our seeds
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
