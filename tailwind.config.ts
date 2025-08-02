@@ -19,30 +19,34 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "#0F1115",
-        foreground: "#FFFFFF",
+        border: "hsl(25, 45%, 90%)",
+        input: "hsl(25, 45%, 95%)",
+        ring: "hsl(18, 100%, 60%)",
+        background: "hsl(0, 0%, 100%)",
+        foreground: "hsl(154, 48%, 15%)",
         primary: {
-          DEFAULT: "hsl(154, 48%, 25%)", // Dark green from your image
-          foreground: "#FFFFFF",
+          DEFAULT: "hsl(154, 48%, 25%)", // Dark green
+          foreground: "hsl(0, 0%, 100%)",
         },
         secondary: {
-          DEFAULT: "#E6E4DD",
-          foreground: "#141413",
+          DEFAULT: "hsl(154, 30%, 95%)", // Light green tint
+          foreground: "hsl(154, 48%, 15%)",
         },
         accent: {
-          DEFAULT: "hsl(18, 100%, 60%)", // Orange from your image
-          foreground: "#FFFFFF",
+          DEFAULT: "hsl(18, 100%, 60%)", // Orange
+          foreground: "hsl(0, 0%, 100%)",
         },
         muted: {
-          DEFAULT: "#828179",
-          foreground: "#FAFAF8",
+          DEFAULT: "hsl(25, 20%, 85%)",
+          foreground: "hsl(154, 48%, 25%)",
         },
         card: {
-          DEFAULT: "#FFFFFF",
-          foreground: "#141413",
+          DEFAULT: "hsl(0, 0%, 100%)",
+          foreground: "hsl(154, 48%, 15%)",
+        },
+        destructive: {
+          DEFAULT: "hsl(0, 84%, 60%)",
+          foreground: "hsl(0, 0%, 100%)",
         },
       },
       borderRadius: {
