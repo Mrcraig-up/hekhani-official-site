@@ -25,7 +25,7 @@ export default {
         background: "#0F1115",
         foreground: "#FFFFFF",
         primary: {
-          DEFAULT: "#141413",
+          DEFAULT: "hsl(154, 48%, 25%)", // Dark green from your image
           foreground: "#FFFFFF",
         },
         secondary: {
@@ -33,7 +33,7 @@ export default {
           foreground: "#141413",
         },
         accent: {
-          DEFAULT: "#8989DE",
+          DEFAULT: "hsl(18, 100%, 60%)", // Orange from your image
           foreground: "#FFFFFF",
         },
         muted: {
