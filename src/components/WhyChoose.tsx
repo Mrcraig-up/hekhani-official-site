@@ -4,22 +4,22 @@ import { CheckCircle, Users, MapPin, GraduationCap } from "lucide-react";
 const WhyChoose = () => {
   const reasons = [
     {
-      icon: <CheckCircle className="w-6 h-6 text-white" />,
+      icon: <CheckCircle className="w-6 h-6 text-accent" />,
       title: "95%+ Germination Rate",
       description: "Rigorous testing ensures consistently high germination rates"
     },
     {
-      icon: <Users className="w-6 h-6 text-white" />,
+      icon: <Users className="w-6 h-6 text-accent" />,
       title: "Affordable & Accessible",
       description: "Available nationwide through our extensive dealer network"
     },
     {
-      icon: <MapPin className="w-6 h-6 text-white" />,
+      icon: <MapPin className="w-6 h-6 text-accent" />,
       title: "Tested for Zimbabwe",
       description: "Specially tested and adapted for Zimbabwean soil and climate"
     },
     {
-      icon: <GraduationCap className="w-6 h-6 text-white" />,
+      icon: <GraduationCap className="w-6 h-6 text-accent" />,
       title: "Extension Support",
       description: "Agricultural training and support for better farming practices"
     }
@@ -30,16 +30,16 @@ const WhyChoose = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-foreground mb-6">
             Why Choose Hekhani?
           </h2>
           <div className="max-w-4xl mx-auto mb-12">
-            <h3 className="text-2xl font-semibold text-white mb-4">Our Mission</h3>
-            <p className="text-lg text-white/80 mb-8">
+            <h3 className="text-2xl font-semibold text-foreground mb-4">Our Mission</h3>
+            <p className="text-lg text-muted-foreground mb-8">
               Hekhani Seeds is a profit for social enterprise that seeks to improve crop productivity and profitability for smallholder farmers through the provision of high performing seed varieties and our commitment to continuous product development.
             </p>
-            <h3 className="text-2xl font-semibold text-white mb-4">Core Values</h3>
-            <div className="flex flex-wrap justify-center gap-4 text-white/80">
+            <h3 className="text-2xl font-semibold text-foreground mb-4">Core Values</h3>
+            <div className="flex flex-wrap justify-center gap-4 text-muted-foreground">
               <span className="px-4 py-2 bg-accent/20 rounded-full">Responsibility</span>
               <span className="px-4 py-2 bg-accent/20 rounded-full">Community</span>
               <span className="px-4 py-2 bg-accent/20 rounded-full">Creativity</span>
@@ -57,8 +57,8 @@ const WhyChoose = () => {
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
                 {reason.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">{reason.title}</h3>
-              <p className="text-white/60 text-sm">{reason.description}</p>
+              <h3 className="text-lg font-semibold text-foreground mb-2">{reason.title}</h3>
+              <p className="text-muted-foreground">{reason.description}</p>
             </Card>
           ))}
         </div>
