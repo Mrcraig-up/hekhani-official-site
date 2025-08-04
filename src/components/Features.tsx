@@ -4,17 +4,17 @@ import { Wheat, Droplets, Leaf } from "lucide-react";
 const Features = () => {
   const features = [
     {
-      icon: <Wheat className="w-6 h-6 text-white" />,
+      icon: <Wheat className="w-6 h-6 text-accent" />,
       title: "Maize Seeds",
       description: "High-yield hybrid and open-pollinated varieties that are heat and drought resistant"
     },
     {
-      icon: <Droplets className="w-6 h-6 text-white" />,
+      icon: <Droplets className="w-6 h-6 text-accent" />,
       title: "Sorghum & Millet",
       description: "Traditional, hardy grains ideal for dry regions and long storage"
     },
     {
-      icon: <Leaf className="w-6 h-6 text-white" />,
+      icon: <Leaf className="w-6 h-6 text-accent" />,
       title: "Vegetable Seeds",
       description: "Tomatoes, onions, cabbage, carrots for home gardens and commercial farming"
     }
@@ -26,10 +26,10 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-white" id="products">
+            <h2 className="text-4xl font-bold text-foreground" id="products">
               Certified Seeds for Sustainable Agriculture
             </h2>
-            <p className="text-xl text-white/60">
+            <p className="text-xl text-muted-foreground">
               Premium seed varieties tested for Zimbabwean soil and climate, delivering reliable harvests for farmers across the nation.
             </p>
           </div>
@@ -43,8 +43,8 @@ const Features = () => {
                   {feature.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-                  <p className="text-white/60">{feature.description}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-foreground">{feature.title}</h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </div>
               </Card>
             ))}

@@ -13,11 +13,11 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#products" className="text-white/80 hover:text-white transition-colors">Products</a>
-          <a href="#about" className="text-white/80 hover:text-white transition-colors">About</a>
-          <a href="#research" className="text-white/80 hover:text-white transition-colors">Research</a>
-          <a href="#contact" className="text-white/80 hover:text-white transition-colors">Contact</a>
-          <Button variant="outline" className="text-white border-white/20 hover:bg-white/10">
+          <a href="#products" className="text-foreground/80 hover:text-foreground transition-colors">Products</a>
+          <a href="#about" className="text-foreground/80 hover:text-foreground transition-colors">About</a>
+          <a href="#research" className="text-foreground/80 hover:text-foreground transition-colors">Research</a>
+          <a href="#contact" className="text-foreground/80 hover:text-foreground transition-colors">Contact</a>
+          <Button variant="outline" className="text-foreground border-border hover:bg-accent/10">
             View Products
           </Button>
           <Button className="bg-[#F2FF44] text-black hover:bg-[#E2EF34]">
