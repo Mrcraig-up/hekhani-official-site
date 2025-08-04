@@ -37,7 +37,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Phone</h3>
-                  <p className="text-white/60">+263 77 000 0000</p>
+                  <p className="text-white/60">+263780046554</p>
                 </div>
               </div>
             </Card>
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-white">Address</h3>
-                  <p className="text-white/60">Plot 5, Arcturus Road, Harare</p>
+                  <p className="text-white/60">4 Bannockburn close Mt pleasant, Harare</p>
                 </div>
               </div>
             </Card>
