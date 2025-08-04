@@ -9,7 +9,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/db47aeec-9643-4220-8905-0ce11575d590.png" 
             alt="Hekhani Seeds Logo" 
-            className="h-8 w-auto"
+            className="h-12 w-auto hover-scale"
           />
         </div>
         <div className="hidden md:flex items-center space-x-8">

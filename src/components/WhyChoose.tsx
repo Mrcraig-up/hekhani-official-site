@@ -34,17 +34,29 @@ const WhyChoose = () => {
             Why Choose Hekhani?
           </h2>
           <div className="max-w-4xl mx-auto mb-12">
-            <h3 className="text-2xl font-semibold text-foreground mb-4">Our Mission</h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              Hekhani Seeds is a profit for social enterprise that seeks to improve crop productivity and profitability for smallholder farmers through the provision of high performing seed varieties and our commitment to continuous product development.
-            </p>
-            <h3 className="text-2xl font-semibold text-foreground mb-4">Core Values</h3>
-            <div className="flex flex-wrap justify-center gap-4 text-muted-foreground">
-              <span className="px-4 py-2 bg-accent/20 rounded-full">Responsibility</span>
-              <span className="px-4 py-2 bg-accent/20 rounded-full">Community</span>
-              <span className="px-4 py-2 bg-accent/20 rounded-full">Creativity</span>
-              <span className="px-4 py-2 bg-accent/20 rounded-full">Honesty</span>
-              <span className="px-4 py-2 bg-accent/20 rounded-full">Growth</span>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Our Mission</h3>
+                <p className="text-lg text-muted-foreground">
+                  To establish a prevalent presence of successful agriculture on every acre in Zimbabwe and beyond.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Our Vision</h3>
+                <p className="text-lg text-muted-foreground">
+                  To be the most trusted seeds driven by science, Technology and preserving the environment.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Core Values</h3>
+                <div className="flex flex-wrap justify-center gap-4 text-muted-foreground">
+                  <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Responsibility</span>
+                  <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Community</span>
+                  <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Creativity</span>
+                  <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Honesty</span>
+                  <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Growth</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -52,12 +64,13 @@ const WhyChoose = () => {
           {reasons.map((reason, index) => (
             <Card 
               key={index} 
-              className="p-6 hover-lift glass-effect text-center group transition-all duration-300"
+              className="p-6 interactive-card glow-effect text-center group slide-in"
+              style={{animationDelay: `${index * 150}ms`}}
             >
-              <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
+              <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
                 {reason.icon}
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">{reason.title}</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">{reason.title}</h3>
               <p className="text-muted-foreground">{reason.description}</p>
             </Card>
           ))}

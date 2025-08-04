@@ -4,26 +4,29 @@
  
 @layer base {
   :root {
-    --background: 154 30% 96%;
-    --foreground: 154 48% 15%;
+    --background: 130 10% 97%;
+    --foreground: 130 40% 15%;
     --card: 0 0% 100%;
-    --card-foreground: 154 48% 15%;
+    --card-foreground: 130 40% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 154 48% 15%;
-    --primary: 154 48% 25%;
+    --popover-foreground: 130 40% 15%;
+    --primary: 130 60% 30%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 154 25% 95%;
-    --secondary-foreground: 154 48% 15%;
-    --muted: 25 20% 90%;
-    --muted-foreground: 154 30% 35%;
-    --accent: 18 100% 60%;
+    --secondary: 130 25% 95%;
+    --secondary-foreground: 130 40% 15%;
+    --muted: 130 15% 90%;
+    --muted-foreground: 130 25% 40%;
+    --accent: 25 95% 55%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 25 20% 85%;
-    --input: 25 20% 90%;
-    --ring: 18 100% 60%;
+    --border: 130 20% 85%;
+    --input: 130 15% 90%;
+    --ring: 25 95% 55%;
     --radius: 1.2rem;
+    --gradient-primary: linear-gradient(135deg, hsl(130 60% 30%), hsl(130 50% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 55%), hsl(35 90% 60%));
+    --shadow-glow: 0 0 40px hsl(130 60% 30% / 0.2);
   }
 }
 
@@ -41,5 +44,21 @@
 }
 
 .hover-lift {
-  @apply transition-transform duration-300 hover:-translate-y-1;
+  @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+.hover-scale {
+  @apply transition-all duration-300 hover:scale-105;
+}
+
+.interactive-card {
+  @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-white/10;
+}
+
+.slide-in {
+  @apply transform transition-all duration-500;
+}
+
+.glow-effect {
+  @apply hover:shadow-[0_0_30px_hsl(var(--accent)/0.3)] transition-shadow duration-300;
 }

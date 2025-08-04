@@ -11,45 +11,57 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      image: "/lovable-uploads/569850c3-93e7-490b-8ddd-16db7249d299.png",
-      title: "Hysun 33 Sunflower",
-      description: "Resistant & Resilient sunflower variety designed for optimal yield in Zimbabwe's climate.",
+      image: "/lovable-uploads/89b7a356-61b6-4d66-81ea-4fa1c6dfc1c5.png",
+      title: "Guinea Fowl (CG7)",
+      description: "Suitable for Fresh Pod, Confectionery, and peanut butter markets. Red in colour, large seed, drought tolerant.",
     },
     {
       id: 2,
-      image: "/lovable-uploads/c6aa77b5-dbe0-4d8e-81df-cdae00cb8057.png",
-      title: "Bimha Soybean Seed",
-      description: "Certified determinate variety suitable for production in all soybean production regions.",
+      image: "/lovable-uploads/26630fc4-f154-4c36-aae7-672c46f88150.png",
+      title: "ZS 265 Maize Hybrid",
+      description: "Drought tolerant maize hybrid. Semi-flint, medium maturing hybrid (120-130 days). Yield potential of 7-12t/ha.",
     },
     {
       id: 3,
-      image: "/lovable-uploads/831f0227-954d-4034-ade7-14ceaf40401c.png",
-      title: "Premium Maize",
-      description: "High-quality white maize varieties for consistent yields and excellent storage.",
+      image: "/lovable-uploads/3f57396c-1fed-419a-888d-5b3e7ee7b817.png",
+      title: "Mhembwe Soybean",
+      description: "Certified determinate variety suitable for production in all Soybean production regions. Yield potential of 4t/ha.",
     },
     {
       id: 4,
-      image: "/lovable-uploads/5c8c75e6-1a9c-443c-a759-43a12a54becb.png",
-      title: "Sunflower Fields",
-      description: "Our sunflower varieties thriving in Zimbabwe's agricultural landscape.",
+      image: "/lovable-uploads/daf4c851-fa8d-423a-b8e5-c42e82516609.png",
+      title: "Bimha Soybean",
+      description: "Determinate variety suitable for production in all Soybean production regions. Medium maturing variety (132 days).",
     },
     {
       id: 5,
-      image: "/lovable-uploads/4244c6a0-41e2-4f38-8e77-86b336938acb.png",
-      title: "Farming Success",
-      description: "Farmers achieving excellent results with our quality seed varieties.",
+      image: "/lovable-uploads/1b2458d4-5f49-47c8-9ff5-917e5d09ca08.png",
+      title: "Hysun 33 Sunflower",
+      description: "Hybrid seed with 105-115 days to physiological maturity. Yield potential of 2.5 tonnes under good management.",
     },
     {
       id: 6,
-      image: "/lovable-uploads/364cd459-b7d2-4a76-8e86-8be57ddb29d3.png",
-      title: "Soybean Fields",
-      description: "Healthy soybean crops growing strong with our certified seeds.",
+      image: "/lovable-uploads/3af9f79b-6b3c-41a4-8262-ef295f989304.png",
+      title: "ZS 265 Drought Tolerant",
+      description: "Drought tolerant maize hybrid ZS265. Semi-flint, medium maturing hybrid with excellent standability.",
     },
     {
       id: 7,
-      image: "/lovable-uploads/dc188b9b-0d19-4ea3-9af4-d984188ac304.png",
-      title: "Field Operations",
-      description: "Supporting farmers with quality seeds for sustainable agriculture.",
+      image: "/lovable-uploads/d1c729f4-003f-4084-a323-923aa3e7eb99.png",
+      title: "Mhembwe Certified",
+      description: "Early maturing variety (117 days). Resistant to soybean rust, bacterial blight, downy mildew, red leaf blotchy.",
+    },
+    {
+      id: 8,
+      image: "/lovable-uploads/a1de4be5-dfb8-489d-b310-f6141cb3268b.png",
+      title: "Bimha Certified",
+      description: "Has acceptable resistance to bacterial blight, downy mildew, red leaf blotchy and frog eye leaf spot.",
+    },
+    {
+      id: 9,
+      image: "/lovable-uploads/5012f990-4084-4878-ae7c-409fef55d539.png",
+      title: "Guinea Fowl Groundnuts",
+      description: "More suitable for Fresh Pod, Confectionery, and peanut butter markets. Medium maturing variety (120-130 days).",
     },
   ];
 
@@ -66,20 +78,20 @@ const Products = () => {
         </div>
 
         {/* Desktop Grid View */}
-        <div className="hidden lg:grid lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
-          {products.map((product) => (
-            <Card key={product.id} className="group overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <div className="hidden lg:grid lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-8">
+          {products.map((product, index) => (
+            <Card key={product.id} className="group overflow-hidden interactive-card glow-effect slide-in" style={{animationDelay: `${index * 100}ms`}}>
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <div className="p-4">
-                  <h3 className="font-semibold text-foreground mb-2">{product.title}</h3>
-                  <p className="text-sm text-muted-foreground">{product.description}</p>
+                <div className="p-6">
+                  <h3 className="font-semibold text-foreground mb-3 text-lg group-hover:text-primary transition-colors">{product.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{product.description}</p>
                 </div>
               </CardContent>
             </Card>
@@ -88,17 +100,17 @@ const Products = () => {
 
         {/* Mobile/Tablet Carousel View */}
         <div className="lg:hidden">
-          <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-2xl mx-auto">
+          <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-3xl mx-auto">
             <CarouselContent>
               {products.map((product) => (
-                <CarouselItem key={product.id} className="md:basis-1/2">
-                  <Card className="overflow-hidden">
+                <CarouselItem key={product.id} className="md:basis-1/2 lg:basis-1/3">
+                  <Card className="overflow-hidden interactive-card glow-effect mx-2">
                     <CardContent className="p-0">
                       <div className="aspect-square overflow-hidden">
                         <img
                           src={product.image}
                           alt={product.title}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                         />
                       </div>
                       <div className="p-4">
@@ -110,8 +122,8 @@ const Products = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hover-scale" />
+            <CarouselNext className="hover-scale" />
           </Carousel>
         </div>
       </div>

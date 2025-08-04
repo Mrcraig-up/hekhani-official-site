@@ -13,13 +13,15 @@ const Footer = () => {
               Nurturing growth, one seed at a time. Let's grow Zimbabwe's future together.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="hover:bg-white/10">
-                <Facebook className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale" asChild>
+                <a href="https://www.facebook.com/hekhani.seedszw/" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-white/10">
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale">
                 <Instagram className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-white/10">
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale">
                 <MessageSquare className="w-5 h-5" />
               </Button>
             </div>
@@ -58,7 +60,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-center text-muted-foreground">
-            © 2024 Hekhani Seeds. All rights reserved.
+            © 2025 Hekhani Seeds. All rights reserved.
           </p>
         </div>
       </div>
