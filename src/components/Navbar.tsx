@@ -9,7 +9,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/db47aeec-9643-4220-8905-0ce11575d590.png" 
             alt="Hekhani Seeds Logo" 
-            className="h-12 w-auto hover-scale"
+            className="h-16 w-auto hover-scale glow-effect"
           />
         </div>
         <div className="hidden md:flex items-center space-x-8">
@@ -20,7 +20,7 @@ const Navbar = () => {
           <Button variant="outline" className="text-foreground border-border hover:bg-accent/10">
             View Products
           </Button>
-          <Button className="bg-[#F2FF44] text-black hover:bg-[#E2EF34]">
+          <Button className="bg-accent text-accent-foreground hover:bg-accent/90 hover-scale glow-effect">
             Contact Us
           </Button>
         </div>

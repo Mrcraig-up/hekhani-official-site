@@ -26,18 +26,18 @@ const Features = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h2 className="text-4xl font-bold text-foreground" id="products">
-              Certified Seeds for Sustainable Agriculture
+            <h2 className="text-4xl font-bold text-foreground colorful-text" id="products">
+              Certified Seeds For Sustainable Agriculture
             </h2>
             <p className="text-xl text-muted-foreground">
-              Premium seed varieties tested for Zimbabwean soil and climate, delivering reliable harvests for farmers across the nation.
+              Premium Seed Varieties Tested For Zimbabwean Soil And Climate, Delivering Reliable Harvests For Farmers Across The Nation.
             </p>
           </div>
           <div className="grid gap-6">
             {features.map((feature, index) => (
               <Card 
                 key={index} 
-                className="p-6 hover-lift glass-effect flex items-start gap-4 group transition-all duration-300"
+                className="p-6 hover-lift glass-effect flex items-start gap-4 group transition-all duration-300 interactive-card pulse-border"
               >
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
                   {feature.icon}

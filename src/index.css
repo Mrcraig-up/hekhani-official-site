@@ -4,29 +4,31 @@
  
 @layer base {
   :root {
-    --background: 130 10% 97%;
-    --foreground: 130 40% 15%;
+    --background: 168 20% 98%;
+    --foreground: 168 84% 19%;
     --card: 0 0% 100%;
-    --card-foreground: 130 40% 15%;
+    --card-foreground: 168 84% 19%;
     --popover: 0 0% 100%;
-    --popover-foreground: 130 40% 15%;
-    --primary: 130 60% 30%;
+    --popover-foreground: 168 84% 19%;
+    --primary: 168 84% 19%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 130 25% 95%;
-    --secondary-foreground: 130 40% 15%;
-    --muted: 130 15% 90%;
-    --muted-foreground: 130 25% 40%;
-    --accent: 25 95% 55%;
+    --secondary: 168 30% 90%;
+    --secondary-foreground: 168 84% 19%;
+    --muted: 168 15% 90%;
+    --muted-foreground: 168 40% 35%;
+    --accent: 25 100% 50%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 130 20% 85%;
-    --input: 130 15% 90%;
-    --ring: 25 95% 55%;
+    --border: 168 20% 85%;
+    --input: 168 15% 90%;
+    --ring: 25 100% 50%;
     --radius: 1.2rem;
-    --gradient-primary: linear-gradient(135deg, hsl(130 60% 30%), hsl(130 50% 45%));
-    --gradient-accent: linear-gradient(135deg, hsl(25 95% 55%), hsl(35 90% 60%));
-    --shadow-glow: 0 0 40px hsl(130 60% 30% / 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(168 84% 19%), hsl(168 70% 35%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 100% 50%), hsl(35 100% 55%));
+    --gradient-vibrant: linear-gradient(45deg, hsl(168 84% 19%), hsl(25 100% 50%), hsl(168 70% 35%));
+    --shadow-glow: 0 0 40px hsl(25 100% 50% / 0.3);
+    --shadow-primary: 0 0 30px hsl(168 84% 19% / 0.2);
   }
 }
 
@@ -40,25 +42,37 @@
 }
 
 .glass-effect {
-  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  @apply bg-primary/5 backdrop-blur-lg border border-primary/10;
 }
 
 .hover-lift {
-  @apply transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg;
+  @apply transition-transform duration-300 hover:-translate-y-2 hover:shadow-[var(--shadow-glow)];
 }
 
 .hover-scale {
-  @apply transition-all duration-300 hover:scale-105;
+  @apply transition-all duration-300 hover:scale-110 hover:rotate-1;
 }
 
 .interactive-card {
-  @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:bg-white/10;
+  @apply transition-all duration-300 hover:shadow-[var(--shadow-glow)] hover:-translate-y-3 hover:bg-gradient-to-r hover:from-primary/10 hover:to-accent/10;
 }
 
 .slide-in {
-  @apply transform transition-all duration-500;
+  @apply transform transition-all duration-500 hover:scale-105;
 }
 
 .glow-effect {
-  @apply hover:shadow-[0_0_30px_hsl(var(--accent)/0.3)] transition-shadow duration-300;
+  @apply hover:shadow-[var(--shadow-glow)] transition-all duration-300;
+}
+
+.colorful-text {
+  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+}
+
+.pulse-border {
+  @apply animate-pulse border-2 border-accent/50;
+}
+
+.vibrant-bg {
+  @apply bg-gradient-to-br from-primary/20 via-accent/10 to-primary/30;
 }

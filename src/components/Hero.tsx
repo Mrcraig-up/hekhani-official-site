@@ -6,17 +6,17 @@ const Hero = () => {
     <div className="min-h-screen flex items-center justify-center px-4 pt-20 bg-gradient-to-br from-primary to-accent">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="space-y-8">
-          <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground leading-tight">
-            Nurturing Growth, One Seed at a Time
+          <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground leading-tight colorful-text">
+            Nurturing Growth, One Seed At A Time
           </h1>
           <p className="text-lg text-primary-foreground/80 max-w-xl">
-            Premium, drought-tolerant, and high-yield seeds tailored for African farmers. Tested for Zimbabwean soil and climate.
+            Premium, Drought-Tolerant, And High-Yield Seeds Tailored For African Farmers. Tested For Zimbabwean Soil And Climate.
           </p>
           <div className="flex gap-4">
-            <Button className="px-8 py-6 text-lg bg-background text-foreground hover:bg-background/90">
+            <Button className="px-8 py-6 text-lg bg-background text-foreground hover:bg-background/90 hover-scale glow-effect">
               View Products
             </Button>
-            <Button variant="outline" className="px-8 py-6 text-lg text-primary-foreground border-primary-foreground/20 hover:bg-primary-foreground/10">
+            <Button variant="outline" className="px-8 py-6 text-lg text-primary-foreground border-primary-foreground/20 hover:bg-primary-foreground/10 hover-scale glow-effect">
               Contact Us
             </Button>
           </div>

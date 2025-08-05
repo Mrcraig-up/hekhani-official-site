@@ -30,7 +30,7 @@ const WhyChoose = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-6">
+          <h2 className="text-4xl font-bold text-foreground mb-6 colorful-text">
             Why Choose Hekhani?
           </h2>
           <div className="max-w-4xl mx-auto mb-12">
@@ -38,13 +38,13 @@ const WhyChoose = () => {
               <div>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">Our Mission</h3>
                 <p className="text-lg text-muted-foreground">
-                  To establish a prevalent presence of successful agriculture on every acre in Zimbabwe and beyond.
+                  To Establish A Prevalent Presence Of Successful Agriculture On Every Acre In Zimbabwe And Beyond.
                 </p>
               </div>
               <div>
                 <h3 className="text-2xl font-semibold text-foreground mb-4">Our Vision</h3>
                 <p className="text-lg text-muted-foreground">
-                  To be the most trusted seeds driven by science, Technology and preserving the environment.
+                  To Be The Most Trusted Seeds Driven By Science, Technology And Preserving The Environment.
                 </p>
               </div>
               <div>
@@ -64,7 +64,7 @@ const WhyChoose = () => {
           {reasons.map((reason, index) => (
             <Card 
               key={index} 
-              className="p-6 interactive-card glow-effect text-center group slide-in"
+              className="p-6 interactive-card glow-effect text-center group slide-in vibrant-bg pulse-border"
               style={{animationDelay: `${index * 150}ms`}}
             >
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">

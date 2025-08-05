@@ -69,18 +69,18 @@ const Products = () => {
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl font-bold text-foreground mb-4 colorful-text">
             Our Premium Seed Products
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our range of certified, high-quality seeds designed for Zimbabwe's agricultural conditions.
+            Discover Our Range Of Certified, High-Quality Seeds Designed For Zimbabwe's Agricultural Conditions.
           </p>
         </div>
 
         {/* Desktop Grid View */}
         <div className="hidden lg:grid lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-8">
           {products.map((product, index) => (
-            <Card key={product.id} className="group overflow-hidden interactive-card glow-effect slide-in" style={{animationDelay: `${index * 100}ms`}}>
+            <Card key={product.id} className="group overflow-hidden interactive-card glow-effect slide-in vibrant-bg pulse-border" style={{animationDelay: `${index * 100}ms`}}>
               <CardContent className="p-0">
                 <div className="aspect-square overflow-hidden">
                   <img
@@ -104,7 +104,7 @@ const Products = () => {
             <CarouselContent>
               {products.map((product) => (
                 <CarouselItem key={product.id} className="md:basis-1/2 lg:basis-1/3">
-                  <Card className="overflow-hidden interactive-card glow-effect mx-2">
+                  <Card className="overflow-hidden interactive-card glow-effect mx-2 vibrant-bg pulse-border">
                     <CardContent className="p-0">
                       <div className="aspect-square overflow-hidden">
                         <img
