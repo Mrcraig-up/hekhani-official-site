@@ -13,23 +13,23 @@ const Footer = () => {
               Nurturing growth, one seed at a time. Let's grow Zimbabwe's future together.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale" asChild>
+              <Button variant="ghost" size="icon" className="hover:bg-[#1877F2]/10 hover-scale" asChild>
                 <a href="https://www.facebook.com/hekhani.seedszw/" target="_blank" rel="noopener noreferrer">
-                  <Facebook className="w-5 h-5" />
+                  <Facebook className="w-5 h-5 text-[#1877F2]" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale" asChild>
+              <Button variant="ghost" size="icon" className="hover:bg-[#0A66C2]/10 hover-scale" asChild>
                 <a href="https://www.linkedin.com/company/hekhani-seeds/" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="w-5 h-5" />
+                  <Linkedin className="w-5 h-5 text-[#0A66C2]" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale" asChild>
-                <a href="https://wa.me/263772189887" target="_blank" rel="noopener noreferrer">
-                  <MessageSquare className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hover:bg-[#25D366]/10 hover-scale" asChild>
+                <a href="https://wa.me/0772189887" target="_blank" rel="noopener noreferrer">
+                  <MessageSquare className="w-5 h-5 text-[#25D366]" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale">
-                <Instagram className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hover:bg-[#E4405F]/10 hover-scale">
+                <Instagram className="w-5 h-5 text-[#E4405F]" />
               </Button>
             </div>
           </div>
