@@ -17,9 +17,11 @@ const Navbar = () => {
           <a href="#about" className="text-foreground/80 hover:text-foreground transition-colors">About</a>
           <a href="#research" className="text-foreground/80 hover:text-foreground transition-colors">Research</a>
           <a href="#contact" className="text-foreground/80 hover:text-foreground transition-colors">Contact</a>
-          <Button variant="outline" className="text-foreground border-border hover:bg-accent/10">
-            View Products
-          </Button>
+          <a href="#products" className="flex items-center">
+            <Button variant="outline" className="text-foreground border-border hover:bg-accent/10">
+              View Products
+            </Button>
+          </a>
           <a href="https://wa.me/263772189887" className="flex items-center">
             <Button className="bg-accent text-accent-foreground hover:bg-accent/90 hover-scale glow-effect">
               WhatsApp Us

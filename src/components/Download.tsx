@@ -25,7 +25,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">Email</h3>
-                  <p className="text-muted-foreground">sales@hekhaniseeds.co.zw</p>
+                  <p className="text-muted-foreground">sales@hekhani.co.zw</p>
                 </div>
               </div>
             </Card>
