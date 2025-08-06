@@ -52,6 +52,7 @@ const WhyChoose = () => {
                 <div className="flex flex-wrap justify-center gap-4 text-muted-foreground">
                   <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Responsibility</span>
                   <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Community</span>
+                  <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Innovation</span>
                   <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Creativity</span>
                   <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Honesty</span>
                   <span className="px-4 py-2 bg-accent/20 rounded-full hover-scale">Growth</span>

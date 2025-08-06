@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { MessageSquare } from "lucide-react";
 import { Download } from "lucide-react";
 
 const Hero = () => {
@@ -38,12 +39,21 @@ const Hero = () => {
         <div className="relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1288&auto=format&fit=crop"
-              alt="Farmer planting seeds in lush field"
-              className="w-full h-auto"
+              src="/lovable-uploads/f3c24cae-b8cc-4676-ad27-263e35b8533a.png"
+              alt="Lush green soybean field"
+              className="w-full h-auto hover-scale glow-effect"
             />
           </div>
           <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl"></div>
+          
+          {/* WhatsApp Floating Button */}
+          <a 
+            href="https://wa.me/263772189887" 
+            className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 hover:scale-110 animate-pulse"
+            title="Chat on WhatsApp"
+          >
+            <MessageSquare className="h-6 w-6" />
+          </a>
         </div>
       </div>
     </div>

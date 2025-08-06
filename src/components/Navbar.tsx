@@ -20,9 +20,11 @@ const Navbar = () => {
           <Button variant="outline" className="text-foreground border-border hover:bg-accent/10">
             View Products
           </Button>
-          <Button className="bg-accent text-accent-foreground hover:bg-accent/90 hover-scale glow-effect">
-            Contact Us
-          </Button>
+          <a href="https://wa.me/263772189887" className="flex items-center">
+            <Button className="bg-accent text-accent-foreground hover:bg-accent/90 hover-scale glow-effect">
+              WhatsApp Us
+            </Button>
+          </a>
         </div>
       </div>
     </nav>

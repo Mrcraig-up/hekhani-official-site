@@ -1,4 +1,4 @@
-import { Facebook, Instagram, MessageSquare } from "lucide-react";
+import { Facebook, Instagram, MessageSquare, Linkedin } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -18,11 +18,18 @@ const Footer = () => {
                   <Facebook className="w-5 h-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale">
-                <Instagram className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale" asChild>
+                <a href="https://www.linkedin.com/company/hekhani-seeds/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-5 h-5" />
+                </a>
+              </Button>
+              <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale" asChild>
+                <a href="https://wa.me/263772189887" target="_blank" rel="noopener noreferrer">
+                  <MessageSquare className="w-5 h-5" />
+                </a>
               </Button>
               <Button variant="ghost" size="icon" className="hover:bg-white/10 hover-scale">
-                <MessageSquare className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </Button>
             </div>
           </div>
