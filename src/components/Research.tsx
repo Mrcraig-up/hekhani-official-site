@@ -4,22 +4,22 @@ import { Beaker, Handshake, Thermometer, Users } from "lucide-react";
 const Research = () => {
   const initiatives = [
     {
-      icon: <Beaker className="w-6 h-6 text-white" />,
+      icon: <Beaker className="w-6 h-6 text-accent-foreground" />,
       title: "Continuous R&D",
       description: "Ongoing research and development for seed improvement"
     },
     {
-      icon: <Handshake className="w-6 h-6 text-white" />,
+      icon: <Handshake className="w-6 h-6 text-accent-foreground" />,
       title: "Research Partnerships", 
       description: "Collaborating with local agricultural research institutions"
     },
     {
-      icon: <Thermometer className="w-6 h-6 text-white" />,
+      icon: <Thermometer className="w-6 h-6 text-accent-foreground" />,
       title: "Climate-Resilient Seeds",
       description: "Developing varieties that withstand changing climate conditions"
     },
     {
-      icon: <Users className="w-6 h-6 text-white" />,
+      icon: <Users className="w-6 h-6 text-accent-foreground" />,
       title: "Community Trials",
       description: "Trial plots across rural provinces for real-world testing"
     }
@@ -30,10 +30,10 @@ const Research = () => {
       <div className="absolute inset-0 bg-accent/5 backdrop-blur-3xl"></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4">
             Research & Innovation
           </h2>
-          <p className="text-xl text-white/60 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Driven by Science. Proven by Fields.
           </p>
         </div>
@@ -46,8 +46,8 @@ const Research = () => {
               <div className="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors">
                 {initiative.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-2 text-white">{initiative.title}</h3>
-              <p className="text-white/60 text-sm">{initiative.description}</p>
+              <h3 className="text-lg font-semibold mb-2 text-foreground">{initiative.title}</h3>
+              <p className="text-muted-foreground text-sm">{initiative.description}</p>
             </Card>
           ))}
         </div>
